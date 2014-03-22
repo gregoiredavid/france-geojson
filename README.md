@@ -15,8 +15,8 @@ Ce projet contient les données géographiques suivantes au format [GeoJSON](htt
 
 À chaque territoire sont associées les propriétés suivantes :
 
-* *code* Code issu du [Code Officiel Géographique](http://www.insee.fr/fr/methodes/nomenclatures/cog/documentation.asp) de l'INSEE
-* *Nom*
+* **Code** Code issu du [Code Officiel Géographique](http://www.insee.fr/fr/methodes/nomenclatures/cog/documentation.asp) de l'INSEE
+* **Nom**
 
 ## Sources
 
@@ -24,4 +24,4 @@ Ce projet contient les données géographiques suivantes au format [GeoJSON](htt
 
 ## Licence
 
-Dans les conditions originales: [Licence ouverte](http://www.etalab.gouv.fr/pages/licence-ouverte-open-licence-5899923.html)
+Copie, partage, modification et redistribution libre dans les conditions originales : [Licence ouverte](http://www.etalab.gouv.fr/pages/licence-ouverte-open-licence-5899923.html).
