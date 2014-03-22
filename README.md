@@ -15,7 +15,7 @@ Ce projet contient les données géographiques suivantes au format [GeoJSON](htt
 
 À chaque territoire sont associées les propriétés suivantes :
 
-* **Code** Code issu du [Code Officiel Géographique](http://www.insee.fr/fr/methodes/nomenclatures/cog/documentation.asp) de l'INSEE
+* **Code** issu du [Code Officiel Géographique](http://www.insee.fr/fr/methodes/nomenclatures/cog/documentation.asp) de l'INSEE
 * **Nom**
 
 ## Sources
