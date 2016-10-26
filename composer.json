@@ -1,0 +1,6 @@
+{
+    "name": "gregoiredavid/france-geojson",
+    "license": "Licence Ouverte",
+    "type": "project",
+    "description": "Contours des régions, départements et communes de France métropolitaine au format GeoJSON"
+}
