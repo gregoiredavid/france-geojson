@@ -1,7 +1,3 @@
-Dernière mise à jour 28 octobre 2016.
-
-# Régions, départements et communes métropolitaines françaises au format GeoJSON
-
 Ce projet contient les tracés des entités géographiques et administratives françaises suivantes au format [GeoJSON](http://geojson.org/) :
 
 * Régions (post-redécoupage de 2015).
@@ -18,23 +14,27 @@ Des fichiers nationaux, avec et sans les DOM-TOM, sont inclus à la racine du pr
 * Contours des cantons par région et par départements (exemple : [Cantons de Corrèze](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/19-correze/cantons-19-correze.geojson)).
 * Contours des communes par région et par départements (exemple : [Communes du Bas-Rhin](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/67-bas-rhin/communes-67-bas-rhin.geojson)).
 
+## Simplification
+
+Pour otpimiser la taille des fichiers, les contours ont été largement simplifiés (détails ci-dessous). Pour une version non-simplifiée des tracés, [utiliser la branche "v2-hd-dev"](https://github.com/gregoiredavid/france-geojson/tree/v2-hd-dev).
+
 ## Meta-données
 
 À chaque territoire sont associées les propriétés suivantes :
 
 * **Code** issu du [Code Officiel Géographique](http://www.insee.fr/fr/methodes/nomenclatures/cog/documentation.asp) de l'INSEE
-* **Nom**
+* **Nom** du territoire
 
-## Sources / Cookbook
+## Sources / Mises à jour
+
+Données à jour au 6 février 2017 :
 
 * [INSEE](http://www.insee.fr/fr/methodes/nomenclatures/cog/telechargement.asp) pour les noms et codes (données 2016).
 * [IGN / Geofla](http://professionnels.ign.fr/geofla) pour les contours (version 2.2, 28 juin 2016)
 
-Conversion des contours du format SHP fourni par l'IGN au GeoJSON via [GDAL ogr2ogr](http://www.gdal.org/ogr2ogr.html). Exemple :
+## Cookbook
 
-```
-ogr2ogr -f GeoJSON -t_srs crs:84 newfile.geojson source.shp
-```
+Conversion des contours du format SHP au GeoJSON via [Mapshaper](https://github.com/mbloch/mapshaper) (cli) avec une simplification ("visvalingam weighted", [en savoir plus](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)) à 15%. Les tracés originaux, non simplifiés, sont disponibles dans la branche "v2-hd-dev" du projet.
 
 ## Licence
 
