@@ -38,6 +38,16 @@ Données à jour au 6 février 2017 :
 
 Conversion des contours du format SHP au GeoJSON via [Mapshaper](https://github.com/mbloch/mapshaper) (cli) avec une simplification ("visvalingam weighted", [en savoir plus](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)) à 15%. Les tracés originaux, non simplifiés, sont disponibles dans la branche "v2-hd-dev" du projet.
 
+## Données manquantes / incomplètes
+
+* **Arrondissements de mayotte** données incomplètes sur le portail de l'IGN.
+* **[Collectivités d'outre-mer (COM)](https://fr.wikipedia.org/wiki/Collectivit%C3%A9_d%27outre-mer)**, c'est à dire la Polynésie française, Saint-Barthélemy, Saint-Martin, Saint-Pierre-et-Miquelon et Wallis-et-Futuna. Données non proposées par l'IGN à cette date.
+* **[Découpage infracommunal en IRIS](http://professionnels.ign.fr/contoursiris)**, à venir dans une version future.
+
 ## Licence
 
 Voir conditions d'utilisation de GEOFLA ([Licence ouverte](http://www.etalab.gouv.fr/pages/licence-ouverte-open-licence-5899923.html)).
+
+## Contribuer
+
+Contributions bienvenues. PR de préférence sur la branche v2-dev.
