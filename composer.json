@@ -2,5 +2,5 @@
     "name": "gregoiredavid/france-geojson",
     "license": "Licence Ouverte",
     "type": "project",
-    "description": "Contours des régions, départements et communes de France métropolitaine au format GeoJSON"
+    "description": "Contours des régions, départements, arrondissements, cantons et communes de France (métropole et départements d'outre-mer) au format GeoJSON"
 }
