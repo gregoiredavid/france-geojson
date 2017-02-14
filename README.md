@@ -1,3 +1,5 @@
+# France Geojson
+
 Ce projet contient les tracés des entités géographiques et administratives françaises suivantes au format [GeoJSON](http://geojson.org/) :
 
 * Régions (post-redécoupage de 2015).
@@ -7,7 +9,7 @@ Ce projet contient les tracés des entités géographiques et administratives fr
 * Arrondissements
 * Communes
 
-Des fichiers nationaux, avec et sans les DOM-TOM, sont inclus à la racine du projet et des subdivisions [par région](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/regions/) et [par département](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/) dans leurs dossiers respectifs :
+Des fichiers nationaux, avec et sans les départements et régions d'outre-mer, sont inclus à la racine du projet et des subdivisions [par région](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/regions/) et [par département](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/) dans leurs dossiers respectifs :
 
 * Contours des départements par région (exemple : [Départements de la région Bourgogne-Franche-Comté](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/regions/bourgogne-franche-comte/departements-bourgogne-franche-comte.geojson)).
 * Contours des arrondissements par région et par départements (exemple : [Arrondissements du Finistère](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/29-finistere/arrondissements-29-finistere.geojson)).
@@ -16,7 +18,7 @@ Des fichiers nationaux, avec et sans les DOM-TOM, sont inclus à la racine du pr
 
 ## Simplification
 
-Pour otpimiser la taille des fichiers, les contours ont été largement simplifiés (détails ci-dessous). Pour une version non-simplifiée des tracés, [utiliser la branche "v2-hd-dev"](https://github.com/gregoiredavid/france-geojson/tree/v2-hd-dev).
+Pour optimiser la taille des fichiers, les contours ont été largement simplifiés (détails ci-dessous). Pour une version non-simplifiée des tracés, [utiliser la branche "v2-hd-dev"](https://github.com/gregoiredavid/france-geojson/tree/v2-hd-dev).
 
 ## Meta-données
 
