@@ -29,7 +29,7 @@ Pour optimiser la taille des fichiers, les contours ont été largement simplifi
 
 ## Sources / Mises à jour
 
-Données à jour au 6 février 2017 :
+Données à jour au 16 avril 2017 :
 
 * [INSEE](http://www.insee.fr/fr/methodes/nomenclatures/cog/telechargement.asp) pour les noms et codes (données 2016).
 * [IGN / Geofla](http://professionnels.ign.fr/geofla) pour les contours (version 2.2, 28 juin 2016)
