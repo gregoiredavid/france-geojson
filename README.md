@@ -34,9 +34,9 @@ Données à jour au 16 avril 2017 :
 * [INSEE](http://www.insee.fr/fr/methodes/nomenclatures/cog/telechargement.asp) pour les noms et codes (données 2016).
 * [IGN / Geofla](http://professionnels.ign.fr/geofla) pour les contours (version 2.2, 28 juin 2016)
 
-## Cookbook
+## Comment ont été générés ces fichiers ?
 
-Conversion des contours du format SHP au GeoJSON via [Mapshaper](https://github.com/mbloch/mapshaper) (cli) avec une simplification ("visvalingam weighted", [en savoir plus](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify)) à 15%. Les tracés originaux, non simplifiés, sont disponibles dans la branche "v2-hd-dev" du projet.
+Les données proviennent d'une conversion des tracés du format SHP au GeoJSON via [Mapshaper](https://github.com/mbloch/mapshaper) (cli). Pour optimiser la taille des fichiers geoJSON, la précision des coordonnées a été limitée à 6 chiffres après la virgule (conformément [aux recommandations du standard GeoJSON](https://tools.ietf.org/html/rfc7946#section-11.2), cf #14) et les tracés ont été simplifiés (méthode ["visvalingam weighted"](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify) à 25%). Les tracés "bruts", non simplifiés, sont disponibles dans la branche "v2-hd-dev" du projet.
 
 ## Données manquantes / incomplètes
 
@@ -50,4 +50,4 @@ Voir conditions d'utilisation de GEOFLA ([Licence ouverte](http://www.etalab.gou
 
 ## Contribuer
 
-Contributions bienvenues. PR de préférence sur la branche v2-dev.
+Contributions, remarques et suggestions bienvenues. PR de préférence sur la branche v2-dev.
