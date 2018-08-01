@@ -41,22 +41,22 @@ Des fichiers nationaux, avec et sans les départements et régions d'outre-mer, 
 Les données proviennent d'une conversion des tracés depuis le format SHP fourni par l'IGN vers le format GeoJSON via [Mapshaper](https://github.com/mbloch/mapshaper) (cli).
 
 Les données de l'IGN sont extrèmement précises, pour optimiser la taille des fichiers ceux-ci ont été simplifés de 2 manières :
-* La précision des coordonnées a été limitée (conformément [aux recommandations du standard GeoJSON](https://tools.ietf.org/html/rfc7946#section-11.2)) à 4 chiffres après la virgule ce qui correspond à une marge de 11,1 mètres environ.
+* La précision des coordonnées a été limitée (conformément [aux recommandations du standard GeoJSON](https://tools.ietf.org/html/rfc7946#section-11.2)) à 5 chiffres après la virgule ce qui correspond à une marge de 1,11 mètres environ.
 * Les tracés ont été simplifiés (méthode ["visvalingam weighted"](https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify) à 25% (plus ce chiffre est bas plus la simplification est importante).
 
 Exemple de commande mapshaper pour convertir un fichier shapefile de l'IGN (input.shp) au format geojson avec les paramètres décrits ci-dessus :
 
 ```
-mapshaper -i input.shp snap -proj wgs84 -simplify 25% weighted keep-shapes -o format=geojson precision=0.0001 output.json
+mapshaper -i input.shp snap -proj wgs84 -simplify 25% weighted keep-shapes -o format=geojson precision=0.00001 output.json
 ```
 
-Pour les cas plus exigeants encore, une "version légère" de chaque fichier national (régions, communes, etc...) est également disponible à la racine du repo, elle se base sur les données simplifiées de l'IGN, et une simplification à 5% au lieu de 25% selon la méthode décrite ci-dessus.
+En cas de besoin, une "version légère" de chaque fichier national (régions, communes, etc...) est également disponible à la racine du repo, elle se base sur les données simplifiées de l'IGN, et une simplification à 5% au lieu de 25% selon la méthode décrite ci-dessus.
 
 Les tracés "bruts", non simplifiés, sont accessibles via la branche "v2-hd-dev" du projet.
 
 ## Données manquantes / incomplètes
 
-* **Certains arrondissements** : pas de données pour Mayotte et la Martinique (données non proposées par l'IGN).
+* **Certains arrondissements** : pas de données pour Mayotte et la Martinique (données absentes de la base Admin Express de l'IGN).
 * **[Collectivités d'outre-mer (COM)](https://fr.wikipedia.org/wiki/Collectivit%C3%A9_d%27outre-mer)**, c'est à dire la Polynésie française, Saint-Barthélemy, Saint-Martin, Saint-Pierre-et-Miquelon et Wallis-et-Futuna. Données non proposées par l'IGN à cette date.
 
 ## Licence
