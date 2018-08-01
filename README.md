@@ -12,16 +12,16 @@ Ce projet contient les tracés des entités géographiques et administratives fr
 
 ## Simplification
 
-Pour optimiser la taille des fichiers, les tracés ont été simplifiés (voir détails ci-dessous : "comment ont été générés ces fichiers ?"). Pour une version "brute", non-simplifiée, [utiliser la branche "v2-hd-dev"](https://github.com/gregoiredavid/france-geojson/tree/v2-hd-dev).
+Pour optimiser la taille des fichiers, les tracés ont été simplifiés (voir détails ci-dessous : "comment ont été générés ces fichiers ?"). La version "brute", non simplifiée, des tracés est disponible en téléchargement [en cliquant sur ce lien (143 Mo)](https://france-geojson.gregoiredavid.fr/download/france-geojson-raw.tgz).
 
 ## Organisation des fichiers
 
-Des fichiers nationaux, avec et sans les départements et régions d'outre-mer, sont inclus à la racine du projet et des subdivisions [par région](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/regions/) et [par département](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/) dans leurs dossiers respectifs :
+Des fichiers nationaux, avec et sans les départements et régions d'outre-mer, sont inclus à la racine du projet et des subdivisions [par région](https://github.com/gregoiredavid/france-geojson/tree/master/regions/) et [par département](https://github.com/gregoiredavid/france-geojson/tree/master/departements/) dans leurs dossiers respectifs :
 
-* Contours des départements par région (exemple : [Départements de la région Bourgogne-Franche-Comté](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/regions/bourgogne-franche-comte/departements-bourgogne-franche-comte.geojson)).
-* Contours des arrondissements par région et par départements (exemple : [Arrondissements du Finistère](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/29-finistere/arrondissements-29-finistere.geojson)).
-* Contours des cantons par région et par départements (exemple : [Cantons de Corrèze](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/19-correze/cantons-19-correze.geojson)).
-* Contours des communes par région et par départements (exemple : [Communes du Bas-Rhin](https://github.com/gregoiredavid/france-geojson/blob/v2-dev/departements/67-bas-rhin/communes-67-bas-rhin.geojson)).
+* Contours des départements par région (exemple : [Départements de la région Bourgogne-Franche-Comté](https://github.com/gregoiredavid/france-geojson/tree/master/regions/bourgogne-franche-comte/departements-bourgogne-franche-comte.geojson)).
+* Contours des arrondissements par région et par départements (exemple : [Arrondissements du Finistère](https://github.com/gregoiredavid/france-geojson/tree/master/departements/29-finistere/arrondissements-29-finistere.geojson)).
+* Contours des cantons par région et par départements (exemple : [Cantons de Corrèze](https://github.com/gregoiredavid/france-geojson/tree/master/departements/19-correze/cantons-19-correze.geojson)).
+* Contours des communes par région et par départements (exemple : [Communes du Bas-Rhin](https://github.com/gregoiredavid/france-geojson/tree/master/departements/67-bas-rhin/communes-67-bas-rhin.geojson)).
 
 
 ## Meta-données
@@ -52,7 +52,7 @@ mapshaper -i input.shp snap -proj wgs84 -simplify 25% weighted keep-shapes -o fo
 
 En cas de besoin, une "version légère" de chaque fichier national (régions, communes, etc...) est également disponible à la racine du repo, elle se base sur les données simplifiées de l'IGN, et une simplification à 5% au lieu de 25% selon la méthode décrite ci-dessus.
 
-Les tracés "bruts", non simplifiés, sont accessibles via la branche "v2-hd-dev" du projet.
+Les tracés "bruts", non simplifiés, sont disponibles en téléchargement [en cliquant sur ce lien (143 Mo)](https://france-geojson.gregoiredavid.fr/download/france-geojson-raw.tgz).
 
 ## Données manquantes / incomplètes
 
@@ -65,4 +65,4 @@ Voir conditions d'utilisation d'Admin Express ([Licence ouverte](http://www.etal
 
 ## Contribuer
 
-Contributions, remarques et suggestions bienvenues. PR de préférence sur la branche v2-dev.
+Contributions, remarques et suggestions bienvenues.
